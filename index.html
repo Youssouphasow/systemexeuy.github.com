@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SystemXëy</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-white text-gray-800 font-sans">
+
+  <!-- Header -->
+  <header class="bg-white text-blue-400 p-6 shadow">
+    <div class="container mx-auto flex justify-between items-center">
+      <div class="flex items-center space-x-4">
+        <img src="logo sytemxey.png" alt="SystemXëy Logo" class="h-10 w-auto">
+      </div>
+      <button class="md:hidden block text-blue-500" onclick="document.getElementById('menu').classList.toggle('hidden')">Menu</button>
+<nav id="menu" class="hidden md:flex md:space-x-4 text-blue-500 flex-col md:flex-row mt-4 md:mt-0">
+  <a href="#mission" class="hover:underline">Mission</a>
+  <a href="#fonctionnalites" class="hover:underline">Fonctionnalités</a>
+  <a href="#dashboard" class="hover:underline">Tableau de bord</a>
+  <a href="#entreprises" class="hover:underline">Entreprises</a>
+  <a href="#depotcv" class="hover:underline">Déposer un CV</a>
+  <a href="#contact" class="hover:underline">Contact</a>
+  <button class="bg-blue-500 text-white px-4 py-2 rounded mt-2 md:mt-0 md:ml-4">Connexion</button>
+</nav>
+
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-r from-blue-400 to-yellow-400 text-white py-20 text-center">
+    <h2 class="text-4xl font-bold mb-4">Construis ton avenir, aujourd’hui</h2>
+    <p class="text-lg mb-6">Une plateforme pour guider les étudiants vers le monde professionnel.</p>
+    <button class="bg-white text-blue-400 px-6 py-3 rounded font-semibold">Commencer maintenant</button>
+  </section>
+
+  <!-- Mission -->
+  <section id="mission" class="py-16 bg-gray-100 text-center">
+    <h3 class="text-3xl font-bold mb-4 text-yellow-500">Notre Mission</h3>
+    <p class="max-w-2xl mx-auto text-lg">SystemXëy vise à accompagner les étudiants dans leur transition vers la vie professionnelle grâce à des outils modernes, des conseils personnalisés et un accès simplifié aux opportunités d'emploi.</p>
+  </section>
+
+  <!-- Fonctionnalités -->
+  <section id="fonctionnalites" class="py-16 container mx-auto">
+    <h3 class="text-3xl font-bold text-center mb-10 text-yellow-500">Fonctionnalités principales</h3>
+    <div class="grid md:grid-cols-3 gap-8 text-center">
+      <div class="p-6 bg-white rounded shadow">
+        <h4 class="font-bold text-xl mb-2 text-blue-400">Création de Profil</h4>
+        <p>Construisez un profil professionnel complet pour vous démarquer.</p>
+      </div>
+      <div class="p-6 bg-white rounded shadow">
+        <h4 class="font-bold text-xl mb-2 text-blue-400">Offres d'emploi</h4>
+        <img src="photo_2025-05-29_13-44-10.jpg" alt="">
+        <p>Accédez à des offres adaptées à votre parcours et vos ambitions.</p>
+      </div>
+      <div class="p-6 bg-white rounded shadow">
+        <h4 class="font-bold text-xl mb-2 text-blue-400">Mentorat</h4>
+        <img src="photo_2025-05-29_13-48-56.jpg" alt="">
+        <p>Bénéficiez des conseils de professionnels et d’anciens étudiants.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Dashboard Étudiant -->
+  <section id="dashboard" class="py-16 bg-blue-50">
+    <div class="container mx-auto text-center">
+      <h3 class="text-3xl font-bold mb-6 text-yellow-500">Tableau de bord étudiant</h3>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="p-6 bg-white rounded shadow">
+          <h4 class="font-semibold text-lg text-blue-400">Mon profil</h4>
+          <p>Complétez et mettez à jour vos informations professionnelles.</p>
+        </div>
+        <div class="p-6 bg-white rounded shadow">
+          <h4 class="font-semibold text-lg text-blue-400">Mes candidatures</h4>
+          <p>Suivez l'état de vos candidatures en temps réel.</p>
+        </div>
+        <div class="p-6 bg-white rounded shadow">
+          <h4 class="font-semibold text-lg text-blue-400">Suggestions d’emploi</h4>
+          <p>Recevez des recommandations personnalisées basées sur votre profil.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Espace Entreprises -->
+  <section id="entreprises" class="py-16 bg-white">
+    <div class="container mx-auto text-center">
+      <h3 class="text-3xl font-bold mb-4 text-yellow-500">Espace Entreprises</h3>
+      <p class="max-w-2xl mx-auto mb-6">Accédez à une base de données de profils étudiants qualifiés. Recherchez par compétence, domaine d'études ou localisation.</p>
+      <button class="bg-blue-400 text-white px-6 py-3 rounded">Voir les profils</button>
+    </div>
+  </section>
+
+  <!-- Dépôt de CV -->
+  <section id="depotcv" class="py-16 bg-gray-100">
+    <div class="container mx-auto text-center">
+      <h3 class="text-3xl font-bold mb-4 text-yellow-500">Déposer mon CV</h3>
+      <p class="max-w-xl mx-auto mb-6">Téléversez votre CV pour qu’il soit visible par les recruteurs inscrits sur notre plateforme.</p>
+      <form class="max-w-md mx-auto bg-white p-6 rounded shadow">
+        <input type="file" class="block w-full text-sm text-gray-500 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-blue-50 file:text-blue-400 hover:file:bg-blue-100 mb-4">
+        <button type="submit" class="bg-blue-400 text-white px-6 py-2 rounded">Envoyer</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="contact" class="bg-blue-400 text-white text-center py-6">
+    <p>&copy; 2025 SystemXëy. Tous droits réservés.</p>
+  </footer>
+
+</body>
+</html>
