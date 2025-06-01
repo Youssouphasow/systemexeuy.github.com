@@ -9,24 +9,55 @@
 <body class="bg-white text-gray-800 font-sans">
 
   <!-- Header -->
-  <header class="bg-white text-blue-400 p-6 shadow">
+  <!-- Header -->
+  <header class="bg-white text-blue-900 shadow-md p-4">
     <div class="container mx-auto flex justify-between items-center">
+      <!-- Logo -->
       <div class="flex items-center space-x-4">
         <img src="logo sytemxey.png" alt="SystemXëy Logo" class="h-10 w-auto">
       </div>
-      <button class="md:hidden block text-blue-500" onclick="document.getElementById('menu').classList.toggle('hidden')">Menu</button>
-<nav id="menu" class="hidden md:flex md:space-x-4 text-blue-500 flex-col md:flex-row mt-4 md:mt-0">
-  <a href="#mission" class="hover:underline">Mission</a>
-  <a href="#fonctionnalites" class="hover:underline">Fonctionnalités</a>
-  <a href="#dashboard" class="hover:underline">Tableau de bord</a>
-  <a href="#entreprises" class="hover:underline">Entreprises</a>
-  <a href="#depotcv" class="hover:underline">Déposer un CV</a>
-  <a href="#contact" class="hover:underline">Contact</a>
-  <button class="bg-blue-500 text-white px-4 py-2 rounded mt-2 md:mt-0 md:ml-4">Connexion</button>
-</nav>
-
+  
+      <!-- Menu hamburger (mobile) -->
+      <div class="md:hidden">
+        <button id="menu-btn" class="text-blue-900 focus:outline-none">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+  
+      <!-- Menu navigation desktop -->
+      <nav class="hidden md:flex space-x-4 items-center">
+        <a href="#mission" class="hover:underline">Mission</a>
+        <a href="#fonctionnalites" class="hover:underline">Fonctionnalités</a>
+        <a href="#dashboard" class="hover:underline">Tableau de bord</a>
+        <a href="#entreprises" class="hover:underline">Entreprises</a>
+        <a href="#depotcv" class="hover:underline">Déposer un CV</a>
+        <a href="#contact" class="hover:underline">Contact</a>
+        <button class="bg-yellow-400 text-white px-4 py-2 rounded">Connexion</button>
+      </nav>
     </div>
+  
+    <!-- Menu navigation mobile -->
+    <div id="mobile-menu" class="md:hidden hidden flex-col space-y-2 text-center mt-4">
+      <a href="#mission" class="block text-blue-900">Mission</a>
+      <a href="#fonctionnalites" class="block text-blue-900">Fonctionnalités</a>
+      <a href="#dashboard" class="block text-blue-900">Tableau de bord</a>
+      <a href="#entreprises" class="block text-blue-900">Entreprises</a>
+      <a href="#depotcv" class="block text-blue-900">Déposer un CV</a>
+      <a href="#contact" class="block text-blue-900">Contact</a>
+      <button class="bg-yellow-400 text-white px-4 py-2 rounded">Connexion</button>
+    </div>
+  
+    <script>
+      document.getElementById('menu-btn').addEventListener('click', function () {
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenu.classList.toggle('hidden');
+      });
+    </script>
   </header>
+  
+
 
   <!-- Hero Section -->
   <section class="bg-gradient-to-r from-blue-400 to-yellow-400 text-white py-20 text-center">
